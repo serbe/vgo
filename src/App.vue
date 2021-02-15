@@ -11,14 +11,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import Navbar from "./components/navbar.vue";
-import "./App.css";
+  import { defineComponent } from "vue";
+  import Navbar from "./components/navbar.vue";
+  import "./App.css";
 
-export default defineComponent({
-  name: "App",
-  components: { Navbar },
-});
+  export default defineComponent({
+    name: "App",
+    components: { Navbar },
+  });
 </script>
 
 <style></style>

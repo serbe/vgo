@@ -5,3 +5,15 @@
 .btn-blue {
   @apply hover:bg-blue-700 text-blue-700 border-blue-700;
 }
+
+.focus-outline {
+  @apply focus:outline-none focus:shadow-outline;
+}
+
+.hover-gray {
+  @apply hover:bg-gray-200 hover:text-gray-900;
+}
+
+.focus-gray {
+  @apply focus:bg-gray-200 focus:text-gray-900;
+}
