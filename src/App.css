@@ -7,7 +7,7 @@
 }
 
 .focus-outline {
-  @apply focus:outline-none focus:shadow-outline;
+  @apply focus:outline-none focus:ring;
 }
 
 .hover-gray {
@@ -16,4 +16,12 @@
 
 .focus-gray {
   @apply focus:bg-gray-200 focus:text-gray-900;
+}
+
+.nav-btn {
+  @apply md:mt-0 mt-2 px-4 py-2;
+}
+
+.nav-a {
+  @apply bg-transparent focus-gray focus-outline font-semibold hover-gray nav-btn rounded-lg text-sm;
 }

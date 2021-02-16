@@ -1,13 +1,13 @@
-<template>
+<template class="min-h-screen">
   <Navbar />
-  <div class="container mx-auto px-4 py-4">
+  <!-- <div class="mx-auto px-4 py-4">
     <router-view></router-view>
   </div>
   <footer class="object-bottom">
-    <div class="container">
+    <div class="">
       <div class="object-center">© 2021 Сочи</div>
     </div>
-  </footer>
+  </footer> -->
 </template>
 
 <script lang="ts">
