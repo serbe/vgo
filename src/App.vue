@@ -1,24 +1,30 @@
-<template class="min-h-screen">
-  <Navbar />
-  <!-- <div class="mx-auto px-4 py-4">
-    <router-view></router-view>
+<template>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
-  <footer class="object-bottom">
-    <div class="">
-      <div class="object-center">© 2021 Сочи</div>
-    </div>
-  </footer> -->
+  <router-view />
 </template>
 
-<script lang="ts">
-  import { defineComponent } from "vue";
-  import Navbar from "./components/navbar.vue";
-  import "./App.css";
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-  export default defineComponent({
-    name: "App",
-    components: { Navbar },
-  });
-</script>
+#nav {
+  padding: 30px;
 
-<style></style>
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>

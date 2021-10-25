@@ -1,44 +1,38 @@
-// import React, { ChangeEvent } from 'react';
+// import { ChangeEvent } from 'react';
 
 // import { FormField } from '../components/formfield';
 // import { StringInputProperties } from '../components/input';
 // import { Select, SelectValues } from '../components/select';
 
-export interface Rank {
+export type Rank = {
   id: number;
   name?: string;
   note?: string;
-}
+};
 
 export const RankEmpty: Rank = {
   id: 0,
 };
 
-export interface RankList {
+export type RankList = {
   id: number;
   name?: string;
   note?: string;
-}
+};
 
-// export const RankIDSelect = (properties: SelectValues): JSX.Element => (
-//   <Select
-//     icon="tag"
-//     id={properties.id}
-//     label="Чин"
-//     listName="RankSelect"
-//     name="rank"
-//     setter={properties.setter}
-//   />
+// export const RankIDSelect = ({ id, setter }: SelectValues): JSX.Element => (
+//   <Select icon="tag" id={id} label="Чин" listName="RankSelect" name="rank" setter={setter} />
 // );
 
-// export const RankNameInput = (properties: StringInputProperties): JSX.Element => (
+// export const RankNameInput = ({ value, setter }: StringInputProperties): JSX.Element => (
 //   <FormField
 //     icon="tag"
 //     label="Наименование чина"
 //     name="name"
 //     onChange={(event: ChangeEvent<HTMLInputElement>): void =>
-//       properties.setter(event.target.value === '' ? undefined : event.target.value)
+//       setter(event.target.value === '' ? undefined : event.target.value)
 //     }
-//     value={properties.value}
+//     value={value}
+//     autocomplete="off"
 //   />
 // );
