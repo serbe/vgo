@@ -6,7 +6,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'HomePage',
-    component: () => import(/* webpackChunkName: "HomePage" */ './views/HomePage.vue'),
+    component: () => import(/* webpackChunkName: "HomePage" */ '/@/views/home/HomePage.vue'),
     meta: {
       requiresAuth: true,
       title: 'ЕДДС',
@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/login',
     name: 'LoginPage',
-    component: () => import(/* webpackChunkName: "LoginPage" */ './views/LoginPage.vue'),
+    component: () => import(/* webpackChunkName: "LoginPage" */ '/@/views/LoginPage.vue'),
     meta: {
       title: 'Авторизация',
       auth: false,
